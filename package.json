@@ -1,0 +1,44 @@
+{
+  "name": "hubot-irasutoya",
+  "description": "Search irasuto from irasutoya",
+  "version": "1.0.0",
+  "author": "moqada <moqada@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/moqada/hubot-irasutoya/issues"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.10.0",
+    "coffeelint": "^1.15.7",
+    "coffeelint-config-moqada": "^1.0.0",
+    "espower-coffee": "^1.0.1",
+    "hubot": "^2.19.0",
+    "hubot-test-helper": "^1.4.4",
+    "mocha": "^2.5.3",
+    "npm-run-all": "^2.3.0",
+    "power-assert": "^1.4.1"
+  },
+  "files": [
+    "index.coffee",
+    "src"
+  ],
+  "homepage": "https://github.com/moqada/hubot-irasutoya#readme",
+  "keywords": [
+    "irasutoya",
+    "image",
+    "hubot",
+    "hubot-scripts"
+  ],
+  "license": "MIT",
+  "main": "index.coffee",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/moqada/hubot-irasutoya.git"
+  },
+  "scripts": {
+    "lint": "coffeelint src test",
+    "robot": "hubot",
+    "test": "npm-run-all lint test:*",
+    "test:src": "mocha",
+    "watch": "mocha --watch {src/**/,test}/*.coffee"
+  }
+}
